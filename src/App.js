@@ -5,7 +5,7 @@ import {
 import Books from './router/Books';
 import Categories from './router/Categories';
 import logo from './images/logo.svg';
-import './App.css';
+import './styles/App.css';
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Books />} />
-        <Route path="quote" element={<Categories />} />
+        <Route path="categories" element={<Categories />} />
         <Route path="*" element={<div>If page not found it goes here</div>} />
       </Routes>
     </Router>
