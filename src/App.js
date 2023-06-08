@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
+import {
+  BrowserRouter as Router, Route, Link, Routes,
+} from 'react-router-dom';
+import Books from './router/Books';
+import Categories from './router/Categories';
+import logo from './images/logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="navbar">
+        <Link to="/">
+          <img src={logo} className="logo" alt="logo" />
+        </Link>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/" className="nav-link">Books</Link>
+            </li>
+            <li>
+              <Link to="/categories" className="nav-link">Categories</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <Routes>
+        <Route path="/" element={<Books />} />
+        <Route path="quote" element={<Categories />} />
+        <Route path="*" element={<div>If page not found it goes here</div>} />
+      </Routes>
+    </Router>
   );
 }
 
