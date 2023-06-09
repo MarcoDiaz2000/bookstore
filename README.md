@@ -87,7 +87,7 @@ Example commands:
 
 ```sh
   cd todo-list
-  git clone https://github.com/MarcoDiaz2000/bookstore
+  git clone https://github.com/MarcoDiaz2000/bookstore.git
 
 ```
 
