@@ -19,7 +19,7 @@ const BookComponent = ({ book, handleDelete }) => {
 
 BookComponent.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
   }).isRequired,

@@ -1,26 +1,31 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../redux/books/booksSlice';
 
-const BookFormComponent = ({ handleAdd }) => {
+const BookFormComponent = () => {
+  const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    handleAdd({ title, author });
+    dispatch(addBook({
+      id: Date.now().toString(),
+      title,
+      author,
+      category,
+    }));
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Book title" required />
       <input type="text" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Author name" required />
+      <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} placeholder="Category" required />
       <button type="submit">Add Book</button>
     </form>
   );
-};
-
-BookFormComponent.propTypes = {
-  handleAdd: PropTypes.func.isRequired,
 };
 
 export default BookFormComponent;

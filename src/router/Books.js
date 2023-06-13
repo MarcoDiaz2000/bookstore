@@ -1,27 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/booksSlice';
 import BookListComponent from '../components/BookListComponent';
 import BookFormComponent from '../components/BookFormComponent';
 
 const Books = () => {
-  const [books, setBooks] = useState([
-    {
-      id: 1, title: 'Book 1', author: 'Author 1', category: 'Category 1',
-    },
-  ]);
-
-  const handleAdd = (book) => {
-    const newId = books.reduce((maxId, book) => Math.max(maxId, book.id), 0) + 1;
-    setBooks([...books, { ...book, id: newId }]);
-  };
+  const books = useSelector((state) => state.books);
+  const dispatch = useDispatch();
 
   const handleDelete = (id) => {
-    setBooks(books.filter((book) => book.id !== id));
+    dispatch(removeBook(id));
   };
 
   return (
     <div>
       <BookListComponent books={books} handleDelete={handleDelete} />
-      <BookFormComponent handleAdd={handleAdd} />
+      <BookFormComponent />
     </div>
   );
 };
