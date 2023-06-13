@@ -11,7 +11,7 @@ const BookFormComponent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(addBook({
-      item_id: Date.now().toString(),
+      id: Date.now().toString(),
       title,
       author,
       category,
