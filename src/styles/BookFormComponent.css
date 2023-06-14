@@ -1,0 +1,22 @@
+.new-book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.new-book-form h2 {
+  color: #343a40;
+}
+
+.new-book-form input {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.new-book-form button {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}

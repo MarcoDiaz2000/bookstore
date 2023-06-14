@@ -1,0 +1,26 @@
+.book {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+}
+
+.book-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.book-category {
+  color: #6c757d;
+}
+
+.book-author {
+  color: #6c757d;
+}
+
+.btn {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}

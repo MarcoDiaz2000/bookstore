@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import '../styles/BookComponent.css';
 
 const BookComponent = ({ book, handleDelete }) => {
   const bookState = useState(book)[0];
@@ -9,11 +10,11 @@ const BookComponent = ({ book, handleDelete }) => {
   };
 
   return (
-    <div>
-      <p>{bookState.category}</p>
-      <h2>{bookState.title}</h2>
-      <p>{bookState.author}</p>
-      <button type="button" onClick={deleteBook}>Delete</button>
+    <div className="book">
+      <p className="book-category">{bookState.category}</p>
+      <h2 className="book-title">{bookState.title}</h2>
+      <p className="book-author">{bookState.author}</p>
+      <button type="button" className="btn btn-primary" onClick={deleteBook}>Delete</button>
     </div>
   );
 };
