@@ -22,7 +22,7 @@ const NavigationBar = () => (
       </nav>
     </div>
     <Link to="/login" className="login-link">
-      <AiOutlineUser size={32} />
+      <AiOutlineUser className="nav-icon" size={32} />
     </Link>
   </div>
 );
