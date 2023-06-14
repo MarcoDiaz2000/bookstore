@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { getBooks, deleteBooks } from '../redux/books/booksAPI';
 import BookListComponent from '../components/BookListComponent';
 import BookFormComponent from '../components/BookFormComponent';
 
@@ -8,8 +8,12 @@ const Books = () => {
   const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    dispatch(getBooks());
+  }, [dispatch]);
+
   const handleDelete = (id) => {
-    dispatch(removeBook(id));
+    dispatch(deleteBooks(id));
   };
 
   return (
