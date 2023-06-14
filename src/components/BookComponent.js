@@ -10,6 +10,7 @@ const BookComponent = ({ book, handleDelete }) => {
 
   return (
     <div>
+      <p>{bookState.category}</p>
       <h2>{bookState.title}</h2>
       <p>{bookState.author}</p>
       <button type="button" onClick={deleteBook}>Delete</button>
@@ -22,6 +23,7 @@ BookComponent.propTypes = {
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
   }).isRequired,
   handleDelete: PropTypes.func.isRequired,
 };

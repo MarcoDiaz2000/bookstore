@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { postBooks } from '../redux/books/booksAPI';
 
 const BookFormComponent = () => {
   const dispatch = useDispatch();
@@ -10,7 +10,7 @@ const BookFormComponent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook({
+    dispatch(postBooks({
       id: Date.now().toString(),
       title,
       author,
