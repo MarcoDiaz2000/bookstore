@@ -15,7 +15,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
 - [👥 Authors](#authors)
-- [🔭 Future Features]
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -162,7 +162,7 @@ You can deploy this project using:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
- ## 🔭 Future Features
+ ## 🔭 Future Features <a name="future-features"></a>
 
 - Add the functionality for the app.🚀
 - Add the final touches for the styling👌
