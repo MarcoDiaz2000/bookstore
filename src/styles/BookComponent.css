@@ -143,7 +143,7 @@
   height: 1.125rem;
   margin: 0.063rem 3.625rem 0 0;
   opacity: 0.5;
-  font-family: RobotoSlab, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -157,7 +157,7 @@
   width: 4.688rem;
   height: 1.313rem;
   margin: 0.438rem 0.813rem 0.25rem 0;
-  font-family: RobotoSlab, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -168,7 +168,7 @@
 }
 
 .update {
-  font-family: RobotoSlab, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
