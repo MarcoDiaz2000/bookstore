@@ -7,6 +7,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -14,7 +15,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
 - [👥 Authors](#authors)
-- [🔭 Future Features]
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -56,6 +57,12 @@ React
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://marcodiaz2000.github.io/bookstore/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -155,7 +162,7 @@ You can deploy this project using:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
- ## 🔭 Future Features
+ ## 🔭 Future Features <a name="future-features"></a>
 
 - Add the functionality for the app.🚀
 - Add the final touches for the styling👌

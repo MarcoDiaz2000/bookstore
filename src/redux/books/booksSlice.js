@@ -11,6 +11,7 @@ export const booksSlice = createSlice({
         id: key,
         title: action.payload[key][0].title,
         category: action.payload[key][0].category,
+        author: action.payload[key][0].author,
       })))
       .addCase(postBooks.fulfilled, (state, action) => {
         state.push(action.payload);
