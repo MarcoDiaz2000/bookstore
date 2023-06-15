@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineUser } from 'react-icons/ai';
-import logo from '../images/logo.svg';
+/* import logo from '../images/logo.svg'; */
 import '../styles/NavigationComponent.css';
 
 const NavigationBar = () => (
   <div className="navbar">
     <div className="navbar-left">
-      <Link to="/">
-        <img src={logo} className="logo" alt="logo" />
+      <Link to="/" className="logo-name">
+        Bookstore CMS
+        {/* <img src={logo} className="logo" alt="logo" /> */}
       </Link>
       <nav>
         <ul>

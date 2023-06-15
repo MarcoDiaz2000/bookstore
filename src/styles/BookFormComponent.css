@@ -1,8 +1,9 @@
 .new-book-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
   padding: 1rem;
+  width: 100%;
 }
 
 .new-book-form h2 {
@@ -13,10 +14,34 @@
   padding: 0.375rem 0.75rem;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
+  flex: 1; /* NEW */
+}
+
+.new-book-form input:first-child {
+  flex: 2; /* NEW */
 }
 
 .new-book-form button {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
+  margin: 0;
+}
+
+.new {
+  height: 1.5rem;
+  margin: 1.813rem 32.75rem 0.588rem 1rem;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.form {
+  margin-bottom: 5rem;
+  background: rgb(251, 251, 251);
 }
