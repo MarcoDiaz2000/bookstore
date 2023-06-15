@@ -7,19 +7,6 @@
   margin-bottom: 1rem;
 }
 
-.book-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.book-category {
-  color: #6c757d;
-}
-
-.book-author {
-  color: #6c757d;
-}
-
 .btn {
   color: #fff;
   background-color: #007bff;
@@ -49,10 +36,6 @@
   height: 80px;
   width: 80px;
   margin-right: 20px;
-}
-
-.book-author {
-  margin-bottom: 1rem;
 }
 
 .chapter {
@@ -95,11 +78,6 @@
 .button-container {
   display: flex;
   align-items: center;
-}
-
-.button-container {
-  display: flex;
-  align-items: center;
   margin-top: 1.5rem;
 }
 
@@ -135,7 +113,7 @@
   width: 4.25rem;
   height: 2.438rem;
   margin: 0.063rem 5.75rem 0 0.688rem;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
@@ -150,7 +128,7 @@
   height: 1.125rem;
   margin: 0.438rem 4.938rem 0.75rem 0.75rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
@@ -165,7 +143,7 @@
   height: 1.125rem;
   margin: 0.063rem 3.625rem 0 0;
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -179,7 +157,7 @@
   width: 4.688rem;
   height: 1.313rem;
   margin: 0.438rem 0.813rem 0.25rem 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -190,7 +168,7 @@
 }
 
 .update {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;

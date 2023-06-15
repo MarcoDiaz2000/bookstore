@@ -22,7 +22,7 @@
   width: 3.688rem;
   height: 1rem;
   margin: 1.425rem 2.563rem 0.488rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -58,7 +58,7 @@ ul {
 .logo-name {
   width: 15rem;
   height: 2.313rem;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
